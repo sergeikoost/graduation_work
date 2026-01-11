@@ -1,1 +1,1 @@
-# graduation_work
+Graduation work for Netology DevOps course
