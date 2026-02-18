@@ -1,15 +1,14 @@
-variable "cloud_id" {
+variable "yc_cloud_id" {
   type = string
 }
 
-variable "folder_id" {
+variable "yc_folder_id" {
   type = string
 }
 
-# Файл ключа сервисного аккаунта 
-variable "sa_key_file" {
-  type        = string
-  description = "Path to service account key JSON file"
+variable "yc_token" {
+  type      = string
+  sensitive = true
 }
 
 variable "network_name" {
