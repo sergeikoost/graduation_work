@@ -6,9 +6,7 @@ variable "yc_token" {
 }
 
 variable "network_id" { type = string }
-variable "subnet_ids" {
-  type = map(string)
-}
+variable "subnet_ids" { type = map(string) }
 
 variable "cluster_name" {
   type    = string
