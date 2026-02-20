@@ -92,3 +92,10 @@ terraform init \
 
 Эта сеть далее используется для Kubernetes-кластера, мониторинга и CI/CD.
 
+### Создание Kubernetes кластера
+
+На этом этапе необходимо создать [Kubernetes](https://kubernetes.io/ru/docs/concepts/overview/what-is-kubernetes/) кластер на базе предварительно созданной инфраструктуры.   Требуется обеспечить доступ к ресурсам из Интернета.
+
+
+ Альтернативный вариант: воспользуйтесь сервисом [Yandex Managed Service for Kubernetes](https://cloud.yandex.ru/services/managed-kubernetes)  Я решил воспользоваться им.
+
