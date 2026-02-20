@@ -18,21 +18,6 @@ Graduation work for Netology DevOps course
  graduation_work/
 │
 ├── ya_cloud/
-│   ├── init/
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │   ├── outputs.tf
-│   │   └── versions.tf
-│   │
-│   ├── network/
-│   │   ├── main.tf
-│   │   ├── providers.tf
-│   │   ├── variables.tf
-│   │   ├── outputs.tf
-│   │   └── versions.tf
-│   │
-│   └── README.md
-│
 ├── k8s-cluster/
 ├── monitoring/
 ├── app/
@@ -96,6 +81,22 @@ terraform init \
 
 На этом этапе необходимо создать [Kubernetes](https://kubernetes.io/ru/docs/concepts/overview/what-is-kubernetes/) кластер на базе предварительно созданной инфраструктуры.   Требуется обеспечить доступ к ресурсам из Интернета.
 
+**Ответ**
 
- Альтернативный вариант: воспользуйтесь сервисом [Yandex Managed Service for Kubernetes](https://cloud.yandex.ru/services/managed-kubernetes)  Я решил воспользоваться им.
+ #### Альтернативный вариант: воспользуйтесь сервисом [Yandex Managed Service for Kubernetes](https://cloud.yandex.ru/services/managed-kubernetes)  
+ 
+ Принял решение воспользоваться этим способом.
+
+Сделал еще одну директорию для манифестов кластера:
+
+~~~
+├── ya_cloud/
+│   ├── k8s/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   │   ├── versions.tf
+│   │   └── providers.tf
+
+~~~
 
